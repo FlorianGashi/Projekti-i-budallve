@@ -1,0 +1,156 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #f05454;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #f05454;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f05454;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #f05454;
+      text-align: center;
+    }
+
+    /* Classes section */
+    .classes-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .class-item {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px #f05454aa;
+      text-align: center;
+    }
+
+    .class-item h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    /* Trainers section */
+    .trainers-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .trainer {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px #f05454aa;
+      text-align: center;
+      color: #eee;
+    }
+
+    .trainer img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid #f05454;
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #f05454cc;
+      color: #eee;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    form input[type="submit"] {
+      background: #f05454;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      border: none;
+    }
+
+    form input[type="submit"]:hover {
+      background: #d94343;
+    }
+
+    .error {
+      color: #ff6b6b;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #1f1f1f;
+      color: #777;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
