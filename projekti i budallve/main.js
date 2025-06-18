@@ -29,3 +29,31 @@ const form = document.getElementById('contactForm');
     alert('Thank you for contacting us, ' + name + '! We will get back to you soon.');
     form.reset();
   });
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+
+  let currentIndex = 0;
+  const totalImages = images.length;
+
+  function updateSlider() {
+    slides.style.transform = `translateX(-${currentIndex * 600}px)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex--;
+    if (currentIndex < 0) currentIndex = totalImages - 1;
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex++;
+    if (currentIndex >= totalImages) currentIndex = 0;
+    updateSlider();
+  });
+
+  // Për automatik, nëse dëshiron
+  // setInterval(() => {
+  //   nextBtn.click();
+  // }, 3000);

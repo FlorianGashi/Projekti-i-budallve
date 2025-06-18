@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gym Website</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 
     
 </head>
@@ -15,6 +19,7 @@
   <h1>Power Gym</h1>
   <nav>
     <a href="index.html">Home</a>
+    <a href="home.html">Llogaritja e peshes</a>
     <a href="#classes">Classes</a>
     <a href="trainers.html">Trainers</a>
     <a href="contact.html">Contact </a>
@@ -29,23 +34,40 @@
   </p>
 </section>
 
-<section id="classes">
-  <h2>Our Classes</h2>
-  <div class="classes-list">
-    <div class="class-item">
-      <h3>Yoga</h3>
-      <p>Improve flexibility, balance, and mind-body awareness.</p>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" style="height: 300px; width: 500px; " >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="4.jpg" class="d-block w-100" alt="..." >
     </div>
-    <div class="class-item">
-      <h3>HIIT</h3>
-      <p>High-Intensity Interval Training to burn fat fast.</p>
+    <div class="carousel-item">
+      <img src="2.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="class-item">
-      <h3>Weightlifting</h3>
-      <p>Build muscle strength and size with expert guidance.</p>
+    <div class="carousel-item">
+      <img src="3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-</section>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- <div class="slider">
+  <div class="slides">
+    <img src="1.jpg" alt="Fitness 1" />
+    <img src="2.jpg" alt="Fitness 2" />
+    <img src="3.jpg" alt="Fitness 3" />
+    <img src="4.jpg" alt="Fitness 4" />
+  </div>
+  <div class="buttons">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+  </div>
+</div> -->
 
 
     
